@@ -1,0 +1,7 @@
+# Ignore secret and generated files
+.env
+__pycache__/
+*.pyc
+
+# Ignore data folder
+data/

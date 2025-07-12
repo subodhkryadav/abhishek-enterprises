@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhishek Enterprises | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-color: #f8f9fa;">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold fs-3" href="/">Abhishek Enterprises</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="/request" target="_blank">Request</a></li>
+        <li class="nav-item"><a class="nav-link" href="/rates" target="_blank">Rates</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('admin_dashboard') }}" target="_blank">Admin</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact" target="_blank">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/feedback" target="_blank">Feedback</a></li>
+       <!-- <li class="nav-item"><a class="nav-link" href="/login" target="_blank">Customer Login</a></li>   -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="text-center py-5 bg-light">
+  <!-- ✅ Logo image path is corrected below -->
+  <img src="{{ url_for('static', filename='images/logo.png') }}"
+       class="img-fluid rounded shadow mb-4"
+       style="max-width: 250px; height: auto;"
+       alt="Company Logo">
+  <h1 class="display-3 fw-bold text-primary">Abhishek Enterprises</h1>
+  <p class="lead text-dark fs-4">From Clothes to Fashion – We Make It Shine!</p>
+  <a href="/request" class="btn btn-outline-primary btn-lg mt-3 px-5 py-2">Book a Laundry Pickup</a>
+
+</section>
+
+<!-- About Section -->
+<section class="container py-5 text-center">
+  <h2 class="text-success fw-bold mb-3">Why Choose Us?</h2>
+  <p class="text-muted fs-5">
+    Established in 2009, we specialize in washing, ironing, dry-cleaning & timely home pickup and delivery.
+    Trusted by 10000+ customers across Bengaluru.
+  </p>
+</section>
+
+<!-- Our Services -->
+<section class="container py-5">
+  <h2 class="text-center fw-bold text-primary mb-4">Our Services</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-success">Washing</h5>
+          <p class="card-text">Professional machine wash for all fabrics using eco-friendly detergents.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-3 mt-md-0">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-success">Ironing</h5>
+          <p class="card-text">Crisp ironing services for formal, ethnic and casual wear with utmost care.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-3 mt-md-0">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-success">Dry Cleaning</h5>
+          <p class="card-text">Delicate and expensive garments? Let us dry-clean them like pros!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white text-center">
+  <h2 class="fw-bold mb-3">Schedule Your First Pickup Now!</h2>
+  <p class="fs-5">We are just a click away. Book your laundry service in under 2 minutes.</p>
+  <a href="/request" class="btn btn-light btn-lg px-5 py-2">Request Now</a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-5 px-3">
+  <p class="mb-1">📍 #9, 18th Main Road, Kempegowda Layout, Bengaluru - 560058</p>
+  <p class="mb-1">📞 +91 99806 87380 | +91 63632 57977</p>
+  <p class="mb-1">✉️ abhishekenterprises2009@gmail.com</p>
+  <p class="mb-0">© 2025 Abhishek Enterprises. All rights reserved.</p>
+  <p bgcolor='green'>subodh kumar yadav</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
